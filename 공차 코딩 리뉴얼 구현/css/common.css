@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.header .list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .list .nav_area {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* 로고 */
+.logo a {
+    font-size: 35px;
+    font-weight: bold;
+    color: #b5121b;
+}
+
+/* 상단 네비 */
+.top_nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_nav .gnb {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.top_nav .gnb img {
+    width: 40px;
+}
+
+
+/* 메인 네비 */
+.nav {
+    margin-top: 15px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav ul li a:hover {
+    color: #b5121b;
+}
+
+/* Footer 전체 스타일 */
+.footer {
+    background: #464444;   /* 푸터 배경색 */
+    padding: 30px 20px;
+    font-size: 13px;
+    color: #ffffff;        /* 기본 글자색 흰색 */
+    line-height: 1.5;
+}
+
+/* 상단 링크 영역 */
+.footer .list .title {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer .list .title strong {
+    font-weight: bold;
+}
+
+/* 개인정보처리방침 강조 (글자색만 변경) */
+.footer .list .title .highlight {
+    color: #FBB929;
+    font-weight: bold;
+}
+
+/* 하단 정보 텍스트 */
+.footer .list .title-01,
+.footer .list .title-02,
+.footer .list .title-03 {
+    margin-bottom: 10px;
+}
+
+.footer .list span {
+    display: inline-block;
+    margin-right: 15px;
+}

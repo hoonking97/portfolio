@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    background: #fff;
+    color: #333;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Layout */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#wrap {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* ---------- 헤더 영역 ---------- */
+.header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.header .nav_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b5121b;
+    /* 공차 브랜드 컬러 느낌 */
+    text-decoration: none;
+}
+
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_nav ul a {
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top_nav .gnb {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top_nav .gnb li a {
+    font-size: 12px;
+    color: #555;
+    text-decoration: none;
+}
+
+.top_nav .gnb img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ---------- 내비게이션 ---------- */
+.nav {
+    margin-top: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.nav ul li {
+    gap: 10px;
+}
+
+
+.nav ul li a {
+    padding: 8px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav ul li a:hover {
+    color: #b5121b;
+    font-weight: bold;
+}
+
+/* ====== Section-01 (Best Menu) ====== */
+.section-01 {
+    padding: 20px;
+}
+
+.section-01 .class {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.section-01 .class .title img {
+    width: 15px;
+    height: 15px;
+}
+
+.section-01 .class .text strong {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* 메뉴 리스트 */
+.section-01 .list,
+.section-01 .list1,
+.section-01 .list2 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.section-01 .item {
+    gap: 12px;
+    align-items: center;
+}
+
+.section-01 .item img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.section-01 .item .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-01 .item .text strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.section-01 .item .text p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #666;
+}
+
+.section-01 .list .item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.section-01 .list1 .item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.section-01 .list2 .item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.section-01 .item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ====== Footer ====== */
+.footer {
+    background-color: #2b2523;
+    padding: 25px 20px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.footer .list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* 이용약관 */
+.footer .title {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer .title .highlight {
+    color: #f7c948;
+    /* 노란 강조 */
+}
+
+/* 개별 그룹 */
+.footer .title-01,
+.footer .title-02,
+.footer .title-03 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+}
+
+.footer .title-01 span,
+.footer .title-02 span,
+.footer .title-03 span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ====== 반응형 (최대 480px) ====== */
+@media (max-width: 480px) {
+    .header .nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .section-01 .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-01 .item img {
+        width: 100%;
+        max-width: 300px;
+    }
+}

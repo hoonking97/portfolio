@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 전체 래퍼 */
+#wrap {
+  width: 100%;
+}
+
+/* 헤더 영역 */
+.header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 로고 & 네비게이션 */
+.nav_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+/* 메인 네비게이션 */
+.nav ul {
+  display: flex;
+  gap: 60px;
+}
+
+.nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #8b5e3c;
+  font-weight: 870;
+}
+
+/* 로그인/인증/검색 */
+.nav-01 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-01 ul {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* 갈색 타원 버튼 */
+.nav-01 ul li {
+  background: #8b5e3c;
+  border-radius: 20px;
+  padding: 6px 18px;
+  margin: 0 2px;
+}
+
+.nav-01 ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-01 ul li:nth-child(2) {
+  background: none;
+  padding: 0;
+}
+
+.nav-01 ul li:nth-child(2) a {
+  color: #fff;
+  font-weight: normal;
+}
+
+/* 돋보기 아이콘 */
+.nav-01 .logo img {
+  width: 30px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
+}
+
+#wrap {
+  max-width: 375px; /* 모바일 최대 폭 */
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* 헤더 영역 */
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+.header .nav_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c30d23; /* 공차 브랜드 메인 컬러 */
+  text-decoration: none;
+}
+
+.top_nav .gnb {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top_nav .gnb li a {
+  font-size: 12px;
+  color: #555;
+  text-decoration: none;
+}
+
+.top_nav .gnb img {
+  width: 15px;
+  height: 15px;
+}
+
+/* 내비게이션 */
+.nav {
+  margin-top: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul li a {
+  display: block;
+  padding: 8px 5px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  color: #c30d23;
+  font-weight: bold;
+}
+
+/* 섹션 01 */
+.section-01 {
+  position: relative;
+  text-align: center;
+  padding: 20px 10px;
+  background: #fafafa;
+}
+
+.section-01 .class {
+  display: flex;
+  gap: 35px;
+}
+
+.section-01 .title img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+.section-01 .text strong {
+  font-size: 16px;
+  color: #222;
+}
+
+/* 시즌 메뉴 */
+.list {
+  padding: 20px 10px;
+}
+
+.list .item img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.list .image img {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.list .text {
+  margin-top: 10px;
+}
+
+.list .text strong {
+  font-size: 20px;
+  color: #000;
+}
+
+.list .text span {
+  display: block;
+  font-size: 15px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.list .text p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* 영양정보 */
+.list1 {
+  padding: 20px 10px;
+}
+
+.list1 .nutrition {
+  width: 375px;
+}
+
+.nutrition h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: center;
+}
+
+.nutrition table th,
+.nutrition table td {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+.nutrition table th {
+  background: #f8f8f8;
+  font-weight: bold;
+}

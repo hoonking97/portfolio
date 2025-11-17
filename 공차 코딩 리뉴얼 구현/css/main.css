@@ -1,0 +1,599 @@
+@charset "utf-8";
+@import url('sub.css');
+@import url('sub1.css');
+@import url('sub1-1.css');
+@import url('common.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    background: #fff;
+    color: #333;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Layout */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+#wrap {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* ---------- 헤더 영역 ---------- */
+.header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.header .nav_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b5121b;
+    /* 공차 브랜드 컬러 느낌 */
+    text-decoration: none;
+}
+
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_nav ul a {
+    font-size: 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top_nav .gnb {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top_nav .gnb li a {
+    font-size: 12px;
+    color: #555;
+    text-decoration: none;
+}
+
+.top_nav .gnb img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ---------- 내비게이션 ---------- */
+.nav {
+    margin-top: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.nav ul li {
+    gap: 10px;
+}
+
+
+.nav ul li a {
+    padding: 8px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav ul li a:hover {
+    color: #b5121b;
+    font-weight: bold;
+}
+
+/* Main Section */
+.main img {
+  width: 100%;
+}
+
+/* Section 01 (New Season Menu) */
+.section-01 {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  margin-top: 35px;
+}
+
+.section-01 .title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-01 .title h2 {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.section-01 .title img {
+  width: 20px;
+  height: 20px;
+  margin-left: 400px;
+  margin-top: 60px;
+}
+
+.section-01 .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section-01 .list .item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.section-01 .item:hover {
+  transform: translateY(-5px);
+}
+
+.section-01 .list .item .text {
+  padding: 15px;
+}
+
+.section-01 .list .item .text strong {
+  font-size: 14px;
+}
+
+.section-01 .list .item.text p {
+  font-size: 13px;
+  font-weight: light;
+  text-align: center;
+}
+
+
+/* Section 02 (Best Menu Tabs) */
+.section-02 .list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section-02 .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-02 .title h2 {
+  font-size: 20px;
+}
+
+.section-02 .title img {
+  width: 20px;
+  height: 20px;
+}
+
+.section-02 .text ul {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-02 .text ul li {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #f6f6f6;
+  font-size: 14px;
+}
+
+.section-02 .text ul li.active {
+  background: #b5121b;
+  color: #fff;
+}
+
+.section-02 .text ul li:not(.active):hover {
+  background: #555;    
+  color: #fff;         
+  font-weight: light;   
+  border-bottom: 1px solid transparent; 
+}
+
+.section-02 .list .item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.section-02 .list .item .text strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-02 .list .item .text strong p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section-02 .list .item:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Section 03 (Membership) */
+.section-03 .list {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 80px;
+  gap: 40px;
+}
+
+.section-03 .list .item {
+  align-items: center;
+}
+
+.section-03 .list .item img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-03 .list .text span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b5121b;
+}
+
+.section-03 .list .text strong {
+  font-size: 24px;
+  margin: 10px 0;
+  display: block;
+}
+
+.section-03 .list .text p {
+  font-size: 16px;
+  font-weight: light;
+}
+
+.section-03 .item:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Section 04 (SNS) */
+.section-04 .title {
+  margin-top: 100px;
+}
+
+.section-04 .title h3 {
+  font-size: 24px;
+}
+
+.section-04 .title .gnb {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 400px;
+}
+
+.section-04 .title .gnb img {
+  width: 23px;
+  height: 23px;
+}
+
+.section-04 .title .gnb li {
+  font-size: 15px;
+}
+
+.section-04 .list {
+  display: flex;
+  gap: 20px;
+}
+
+.section-04 .item {
+  flex: 1;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-04 .item:hover {
+  transform: translateY(-5px);
+}
+
+/* Section 05 (Store & Franchise) */
+.section-05 .list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.section-05 .class-01,
+.section-05 .class-02 {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+ 
+}
+
+.section-05 .class-01 .text {
+  margin-right: 20px;
+}
+
+.section-05 .class-01 .text strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section-05 .class-01 .text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section-05 .class-01 .item {
+  margin-left: 40px;
+}
+
+.section-05 .class-01 .item img {
+  width: 80px;
+  height: 80px;
+}
+
+.section-05 .class-02 .text {
+  margin-right: 20px;
+}
+
+.section-05 .class-02 .text strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section-05 .class-02 .text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section-05 .class-02 .item {
+  margin-left: 60px;
+}
+
+.section-05 .class-02 .item img {
+  width: 80px;
+  height: 80px;
+}
+
+.section-05 .item:hover {
+  transform: translateY(-5px);
+}
+
+/* Section 06 (Event) */
+.section-06 {
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.section-06 .title h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.section-06 .text p {
+  border: 1px solid #A29A9A;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Section 07 (Solution) */
+.section-07 {
+    padding: 30px 20px;
+    background-color: #fff;
+}
+
+.section-07 .title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.section-07 .text {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px 20px;
+    background: #fff;
+    position: relative;
+}
+
+.section-07 .text span {
+    display: block;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #333;
+}
+
+.section-07 .text .highlight {
+    color: #d32f2f; /* 공차 강조 빨강 */
+}
+
+.section-07 .text .image {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section-07 .text .image img {
+    width: 14px;
+    height: 14px;
+}
+
+/* ====== Footer ====== */
+.footer {
+    background-color: #2b2523;
+    padding: 25px 20px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.footer .list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* 이용약관 */
+.footer .title {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer .title .highlight {
+    color: #f7c948;
+    /* 노란 강조 */
+}
+
+/* 개별 그룹 */
+.footer .title-01,
+.footer .title-02,
+.footer .title-03 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+}
+
+.footer .title-01 span,
+.footer .title-02 span,
+.footer .title-03 span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* 반응형 적용 */
+/* 태블릿: 768px 이하 */
+@media screen and (max-width: 768px) {
+  .header .nav_area {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .section-01 .list,
+  .section-02 .list {
+    flex-direction: column;
+  }
+
+  .section-03 .list,
+  .section-05 .list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-07 .text {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* 모바일: 480px 이하 */
+@media screen and (max-width: 480px) {
+  .header .logo a {
+    font-size: 24px;
+  }
+
+  .nav ul {
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .section-01 .title {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-01 .title img {
+    width: 25px;
+  }
+
+  .section-01 .text strong {
+    font-size: 16px;
+  }
+
+  .section-02 .text ul {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .section-03 strong {
+    font-size: 20px;
+  }
+
+  .section-07 .text {
+    align-items: flex-start;
+  }
+}
