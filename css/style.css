@@ -77,8 +77,8 @@ section {
     background: rgba(255, 255, 255, 0.96);
     border-radius: 18px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    margin: 100px auto;
-    padding: 100px 6%;
+    margin: 70px auto;
+    padding: 80px 6%;
     max-width: 1600px;
     backdrop-filter: blur(10px);
     transition: all 0.5s ease-in-out;
@@ -97,23 +97,19 @@ html {
 /* ===== NAVBAR ===== */
 .navbar {
     position: fixed;
-    /* ← sticky → fixed 로 변경 */
     top: 0;
     left: 0;
     width: 100%;
-    /* 항상 전체 가로 고정 */
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(200, 200, 200, 0.3);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     z-index: 9999;
-    /* 최상단 */
 }
 
 /* 네비바 높이만큼 본문이 아래로 내려가도록 여백 보정 */
 body {
     padding-top: 70px;
-    /* 네비바 높이만큼 패딩 추가 */
 }
 
 .nav-container {
@@ -234,7 +230,6 @@ body {
 
 .intro-left {
     margin-top: 40px;
-    /* 여백 추가 */
 }
 
 .intro-left p {
@@ -256,31 +251,36 @@ body {
 
 .tools {
     margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-auto-rows: 50px;
-    gap: 12px 16px;
-    justify-content: start;
-    align-items: center;
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 텍스트 왼쪽 정렬 */
+    gap: 30px;
+    width: 100%;
 }
 
 .tools .skills-title {
-    grid-column: span 4;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* 아이콘 박스: 가로 정렬 */
+.tools .icon-row {
+    display: flex;
+    gap: 18px;
+    align-items: center;
 }
 
 .tools img {
     width: 50px;
     height: 50px;
-    object-fit: cover;
-    display: block;
+    object-fit: contain;
     transition: transform 0.2s ease;
 }
 
 .tools img:hover {
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 /* ===== Skills 제목 ===== */
@@ -449,16 +449,14 @@ body {
 
 /* ===== 우측 그룹 (학력, 경력 등) ===== */
 .right-block {
-    flex: 1.3;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    min-width: 520px;
+    gap: 50px;
+    min-width: 700px;
 }
 
 .education .overseas .career {
     margin-bottom: 15px;
-    /* 아래 간격 줄임 */
 }
 
 .education h3 .overseas h3 .career h3 {
@@ -475,20 +473,20 @@ body {
 .kv-table {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    /* 행 간격 줄임 */
+    gap: 3px;
 }
 
 .kv-table .row {
     display: grid;
-    grid-template-columns: 1.2fr 1fr auto;
-    gap: 18px;
+    grid-template-columns: 1fr 1.2fr auto;
+    gap: 3px;
     align-items: start;
 }
 
 .kv-table .col-main .kv-table .col-sub {
     font-size: 0.93rem;
     line-height: 1.6;
+    text-align: right;
 }
 
 .kv-table .col-date {
@@ -552,10 +550,7 @@ body {
 }
 
 /* ---- 상단 영역 전체 흰 배경 고정 ---- */
-.intro,
-#about,
-.about,
-.about-me-section {
+.intro #about .about .about-me-section {
     background: #fff !important;
     box-shadow: none !important;
 }
@@ -590,26 +585,52 @@ body {
 }
 
 .links {
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
-    gap: 8px 16px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .links a {
-    padding: 6px 10px;
-    color: #0077ff;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border-bottom: 1px solid transparent;
-    text-decoration: none;
+    padding: 5px 10px;
+    background: #e9f0ff;
+    color: #0d47ff;
+    border: 1px solid #bcd0ff;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    display: inline-block;
+    width: fit-content;
 }
 
 .links a:hover {
-    color: #005dc1;
-    border-bottom: 1px solid #0077ff;
+    background: #d6e4ff;
+    transform: translateY(-2px);
+}
+
+/* 각 그룹 */
+.link-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    padding-bottom: 10px;
+}
+
+/* 기존 링크 스타일 유지 */
+.link-group a {
+    padding: 8px 14px;
+    background: #e9f0ff;
+    color: #0d47ff;
+    border: 1px solid #bcd0ff;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.link-group a:hover {
+    background: #d6e4ff;
+    transform: translateY(-2px);
 }
 
 /* ===== 페이드 효과 ===== */
@@ -697,10 +718,10 @@ body {
 
 .section-title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: #111;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
     letter-spacing: 0.3px;
     position: relative;
 }
@@ -711,7 +732,7 @@ body {
 
 /* ===== MAIN PROJECTS (보라-블루 톤) ===== */
 #main-projects {
-    background: linear-gradient(160deg, #6e8bff 0%, #d0d6ff 100%);
+    background: linear-gradient(160deg, #6e8bff 0%, #a7b7ff 100%);
 }
 
 #main-projects::before {
@@ -918,7 +939,7 @@ body {
 
 /* ===== DESIGN PROJECTS (핑크-라벤더 계열) ===== */
 #design-projects {
-    background: linear-gradient(180deg, #e9c0ff 0%, #f6e5ff 100%);
+    background: linear-gradient(180deg, #cfa8ff 0%, #f1d9ff 100%);
 }
 
 #design-projects::before {
@@ -1103,9 +1124,9 @@ body {
     z-index: 0;
 }
 
-/* ===== CONTACT (그린-민트 계열) ===== */
+/* ===== CONTACT ===== */
 #contact {
-    background: linear-gradient(180deg, #a9ffd8 0%, #e5fff1 100%);
+    background: #ffffff !important;
 }
 
 #contact::before {
