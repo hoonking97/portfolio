@@ -47,14 +47,6 @@
             });
             handleScroll();
 
-            /* 섹션별 배경색 전환 (진한 컬러 버전) */
-            const colorMap = {
-                "main-projects": "#6e8bff",     // 선명한 퍼플블루
-                "design-projects": "#e9c0ff",   // 라벤더 핑크
-                "photoshop-gallery": "#ffd4b3", // 따뜻한 코랄
-                "contact": "#a9ffd8"            // 산뜻한 민트그린
-            };
-
             const allSections = document.querySelectorAll("section");
             window.addEventListener("scroll", () => {
                 let current = "";
@@ -196,13 +188,16 @@
                     <p>I design with precision and purpose creating digital experiences that build trust and value.</p>
                 </div><!-- .intro-langs -->
                 <div class="tools">
-                    <p class="skills-title">Can do Skills</p>
-                    <img src="img/아이콘/Photoshop.png" alt="Photoshop">
-                    <img src="img/아이콘/Figma.png" alt="Figma">
-                    <img src="img/아이콘/html.png" alt="HTML">
-                    <img src="img/아이콘/css.png" alt="CSS">
-                    <img src="img/아이콘/JavaScript.png" alt="JavaScript">
-                    <img src="img/아이콘/jquery.png" alt="jQuery">
+                    <div class="skills-title">Can do Skills</div>
+
+                    <div class="icon-list">
+                        <img src="img/아이콘/Photoshop.png" alt="Photoshop">
+                        <img src="img/아이콘/Figma.png" alt="Figma">
+                        <img src="img/아이콘/html.png" alt="HTML">
+                        <img src="img/아이콘/css.png" alt="CSS">
+                        <img src="img/아이콘/JavaScript.png" alt="JavaScript">
+                        <img src="img/아이콘/jquery.png" alt="jQuery">
+                    </div><!-- .icon-list end -->
                 </div><!-- .tools -->
             </div><!-- .intro-right end -->
         </div><!-- .intro-container end -->
@@ -342,9 +337,9 @@
                     </ul><!-- .meta -->
                     <div class="links">
                         <a href="https://www.figma.com/design/o6l390dSmo9jBaEbU3q467/W-CONCEPT?node-id=220-25"
-                            target="_blank">🎨 Figma 보기</a>
-                        <a href="WCONCEPT 코딩 리뉴얼 구현/index.html" target="_blank" target="_blank">💻 코딩 보기</a>
-                        <a href="img/W Concept/W Concept.pdf" target="_blank">📄 프로젝트 설명서</a>
+                            target="_blank">Figma 보기</a>
+                        <a href="WCONCEPT 코딩 리뉴얼 구현/index.html" target="_blank" target="_blank">코딩 보기</a>
+                        <a href="img/W Concept/W Concept.pdf" target="_blank">프로젝트 설명서</a>
                     </div><!-- .links -->
                 </div><!-- .project-info -->
             </div><!-- .project-container -->
@@ -374,18 +369,25 @@
                         <li><strong>진행 상태:</strong> 완료</li>
                     </ul><!-- .meta -->
                     <div class="links">
-                        <a href="https://www.figma.com/design/l3ygWhL6L7OfcA0nxA8vUb/%EA%B3%B5%EC%B0%A8?node-id=670-312&t=O4JHUlQY5ZuFuqtQ-1"
-                            target="_blank">🎨 Figma 보기</a>
-                        <a href="공차 코딩 리뉴얼 구현/index.html" target="_blank">💻 메인 이미지</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(2).html">서브 화면1</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(2-1).html">코딩-서브</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(2-2).html">코딩-서브</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(2-3).html">코딩-서브</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(1).html">서브 화면2</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(1-1).html">코딩-서브</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(1-2).html">코딩-서브</a>
-                        <a href="공차 코딩 리뉴얼 구현/index(1-3).html">코딩-서브</a>
-                        <a href="img/공차/GongCha.pdf" target="_blank">📄 프로젝트 설명서</a>
+                        <div class="link-group">
+                            <a href="https://www.figma.com/design/l3ygWhL6L7OfcA0nxA8vUb/%EA%B3%B5%EC%B0%A8?node-id=670-312&t=O4JHUlQY5ZuFuqtQ-1"target="_blank">Figma 보기</a>
+                        </div><!-- .link-group -->
+
+                        <div class="link-group">
+                            <a href="공차 코딩 리뉴얼 구현/index.html" target="_blank">공차-메인</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(2).html">New 시즌 메뉴</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(2-1).html">그릭요거티&피치 크러쉬</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(2-2).html">타로 쥬얼리 시그니처 스무디</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(2-3).html">브라운슈가 시그니처 밀크티</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(1).html">베스트 메뉴</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(1-1).html">미니펄 망고 밀크</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(1-2).html">딸기 쿠키 스무디+펄</a>
+                            <a href="공차 코딩 리뉴얼 구현/index(1-3).html">망고 요구르트+화이트펄</a>
+                        </div><!-- .link-group -->
+
+                        <div class="link-group">
+                            <a href="img/공차/GongCha.pdf" target="_blank">프로젝트 설명서</a>
+                        </div><!-- .link-group -->
                     </div><!-- .links -->
                 </div><!-- .project-info -->
             </div><!-- .project-container  -->
@@ -416,9 +418,9 @@
                     </ul><!-- .meta -->
                     <div class="links">
                         <a href="https://www.figma.com/design/07CP5QlcI6AjyCeAZBgHN2/%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C?node-id=1036-4&t=eACxMkIbb7LeTHoz-1"
-                            target="_blank">🎨 Figma 보기</a>
-                        <a href="한국투자증권 코딩 리뉴얼 구현/index.html" target="_blank">💻 코딩 보기</a>
-                        <a href="img/한국투자증권/Korea Investment.pdf" target="_blank">📄 프로젝트 설명서</a>
+                            target="_blank">Figma 보기</a>
+                        <a href="한국투자증권 코딩 리뉴얼 구현/index.html" target="_blank">코딩 보기</a>
+                        <a href="img/한국투자증권/Korea Investment.pdf" target="_blank">프로젝트 설명서</a>
                     </div><!-- .links -->
                 </div><!-- .project-info -->
             </div><!-- .project-container -->
@@ -448,9 +450,9 @@
                     </ul><!-- .meta -->
                     <div class="links">
                         <a href="https://www.figma.com/design/NBLPagP45c3DBbWTYtSSdy/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%8E%98%EC%9D%B4?node-id=1223-469&t=DuO9uH3NMkOO6Rph-1"
-                            target="_blank">🎨 Figma 보기</a>
-                        <a href="카카오페이/index.html" target="_blank">💻 코딩 보기</a>
-                        <a href="img/카카오페이/양창훈_카카오페이.pdf" target="_blank">📄 프로젝트 설명서</a>
+                            target="_blank">Figma 보기</a>
+                        <a href="카카오페이/index.html" target="_blank">코딩 보기</a>
+                        <a href="img/카카오페이/양창훈_카카오페이.pdf" target="_blank">프로젝트 설명서</a>
                     </div><!-- .links -->
                 </div><!-- .project-info -->
             </div><!-- .project-container -->
@@ -485,8 +487,8 @@
                         <li><strong>진행 상태:</strong> 완료</li>
                     </ul><!-- .meta -->
                     <div class="links">
-                        <a href="https://www.figma.com/design/jDXN8jrZ891qOU33Tu2Oaj" target="_blank">🎨 Figma보기</a>
-                        <a href="img/Money Tree/MoneyTree.pdf" target="_blank">📄 프로젝트 설명서</a>
+                        <a href="https://www.figma.com/design/jDXN8jrZ891qOU33Tu2Oaj" target="_blank">Figma보기</a>
+                        <a href="img/Money Tree/MoneyTree.pdf" target="_blank">프로젝트 설명서</a>
                     </div><!-- .links -->
                 </div><!-- .project-info -->
             </div><!-- .project-container -->
@@ -516,7 +518,7 @@
                         <li><strong>진행 상태:</strong> 완료</li>
                     </ul><!-- .meta -->
                     <div class="links">
-                        <a href="쏘카 코딩 구현/index.html" target="_blank">💻 코딩 보기</a>
+                        <a href="쏘카 코딩 구현/index.html" target="_blank">코딩 보기</a>
                     </div><!-- .links -->
                 </div><!-- .project-info -->
             </div><!-- .project-container -->
@@ -530,7 +532,6 @@
             다양한 결제 시나리오와 연동 가이드를 포토샵으로 제작한 결과물입니다.<br>
             각 이미지를 클릭하면 크게 볼 수 있습니다.
         </p><!-- .gallery-desc -->
-        <h2 class="section-title">Wechat Pay Projects</h2>
 
         <div class="gallery-grid">
             <div class="gallery-item">
@@ -583,8 +584,7 @@
                     <li><strong>진행 상태:</strong> 완료</li>
                 </ul>
                 <div class="links">
-                    <a href="img/LOOKPIN/LOOKPIN상세페이지.jpg" target="_blank">🖼️ 전체 보기</a>
-                    <a href="https://www.lookpin.co.kr/products/3095728" target="_blank">LOOKPIN</a>
+                    <a href="img/LOOKPIN/LOOKPIN상세페이지.jpg" target="_blank">전체 보기</a>
                 </div><!-- .links -->
             </div><!-- .project-info -->
         </div><!-- .project-container -->
@@ -606,4 +606,5 @@
     </section><!-- #contact end -->
 
 </body>
+
 </html>
